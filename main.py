@@ -46,7 +46,7 @@ class DateMeApp(MDApp):
 
         # Animated GIF (make sure the path is relative or correct on your system)
         video = Video(
-            source="D:\Coding\Python\Kivy\ddpool.gif",
+            source="ddpool.gif",
             size_hint=(0.6, 0.6),
             pos_hint={"center_x": 0.5, "center_y": 0.6},
             state='play',
@@ -196,7 +196,7 @@ class DateMeApp(MDApp):
     def send_whatsapp_message(self, date, idea):
         name = self.name_input.text or "beautiful"
         message = f"Let's go on a date on {date}, {name}! \nPlan is: {idea}"
-        url = f"https://wa.me/9679550477?text={quote(message)}"
+        url = f"https://wa.me/PHONE_NUMBER?text={quote(message)}"
         webbrowser.open(url)
 
 
